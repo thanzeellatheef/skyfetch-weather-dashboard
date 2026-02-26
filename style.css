@@ -84,3 +84,102 @@ h1 {
     width: 100px;
     height: 100px;
 }
+
+/* TODO: Style .search-section */
+/* Suggestions:
+   - margin-bottom: 30px
+   - display: flex
+   - gap between input and button
+   - Make it responsive
+*/
+.search-section {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+/* TODO: Style #city-input */
+/* Suggestions:
+   - padding: 12px 20px
+   - border-radius: 25px
+   - border: 2px solid #ddd
+   - flex: 1 (to take available space)
+   - font-size: 1rem
+   - Focus state with border color change
+*/
+#city-input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    flex: 1;
+    font-size: 1rem;
+}
+/* TODO: Style #search-btn */
+/* Suggestions:
+   - padding: 12px 30px
+   - background: linear-gradient (match your theme)
+   - color: white
+   - border: none
+   - border-radius: 25px
+   - cursor: pointer
+   - Hover effect with transform or opacity
+   - Transition for smooth effects
+*/
+#search-btn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* TODO: Style .error-message */
+/* Suggestions:
+   - background: light red/pink
+   - color: dark red
+   - padding and border-radius
+   - border-left: thick red border
+   - Add an error icon/emoji
+*/.error-message {
+    background: #ffe5e5;
+    color: #d8000c;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-left: 5px solid #d8000c;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Spinner circle */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px auto; /* center horizontally + space below */
+}
+
+/* Spin animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Loading container styling */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #555;
+    font-size: 16px;
+}
